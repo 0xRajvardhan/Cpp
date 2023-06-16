@@ -1,8 +1,13 @@
 #include <iostream>
 using namespace std;
 
-int power(int a, int b)
+int power()
 {
+
+    int a, b;
+    cout << "Enter two numbers: " << endl;
+    cin >> a >> b;
+
     int ans = 1;
 
     for (int i = 1; i <= b; i++)
@@ -14,13 +19,13 @@ int power(int a, int b)
 
 int main()
 {
-    int a, b;
-    cout << "Enter two numbers: " << endl;
-    cin >> a >> b;
+    // int a, b;
+    // cout << "Enter two numbers: " << endl;
+    // cin >> a >> b;
 
-    int answer = power(a, b);
+    // int answer = power(a, b);
 
-    cout << answer;
+    cout << power();
 
     return 0;
 }
