@@ -2,8 +2,16 @@
 using namespace std;
 
 // HOLD
-void printArray()
+void printArray(int arr[], int size)
 {
+    cout << "printing the array " << endl;
+    // print the array
+    for (int i = 0; i < size; i++)
+    {
+        cout << arr[i] << " ";
+    }
+
+    cout << endl << "printing done " << endl;
 }
 
 int main()
@@ -19,14 +27,9 @@ int main()
     cout << "Value at index 2 is: " << second[2] << endl;
 
     // another one
-    int third[15] = {1, 2, 3};
+    int third[15] = {2, 7};
     int n = 15;
-
-    for (int i = 0; i < n; i++)
-    {
-        cout << third[i] << " ";
-    }
-    cout << endl;
+    printArray(third, 15);
 
     cout << "Everything is fine" << endl;
 }
